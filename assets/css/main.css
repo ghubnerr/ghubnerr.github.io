@@ -1684,6 +1684,11 @@ input, select, textarea {
 		transition: transform 0.3s ease-in-out;
 		
 	}
+
+	.phone {
+		display: none;
+
+	}
 	
 	.socials a:hover {
 		transform: translateY(-10px); 
@@ -1693,6 +1698,10 @@ input, select, textarea {
 	  @media screen and (max-width: 600px) {
 		  a.link-container.image{
 			  margin-right: 40px;
+		  }
+
+		  .phone {
+			display: block;
 		  }
   
 	  }
