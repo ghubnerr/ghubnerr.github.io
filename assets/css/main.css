@@ -1629,17 +1629,23 @@ input, select, textarea {
 
 		}
 
+		
 		@media screen and (max-width: 480px) {
-
+			
 			#main article {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
+			
+			button#scrollButton {
+				display: none;
 
+			}
+			
 		}
-	/* Contacts */ 
-
-	.socials {
-		display: grid;
+		/* Contacts */ 
+		
+		.socials {
+			display: grid;
 		gap: 20px;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
 		grid-auto-rows: minmax(250, 1fr);
@@ -1661,10 +1667,14 @@ input, select, textarea {
 		width: 100%;
 		padding: 40px;
 	}
-
+	
 	a .link-container h4 {
 		align-self: baseline;
 		margin-bottom: 0;
+	}
+
+	a.link-container.image{
+		margin: 40px 0px 0 40px;
 	}
 	
 	.socials a {
@@ -1672,26 +1682,32 @@ input, select, textarea {
 		border: 1px solid white;
 		border-radius: 20px;
 		transition: transform 0.3s ease-in-out;
-
+		
 	}
-
+	
 	.socials a:hover {
 		transform: translateY(-10px); 
 	  }
 
-/* Footer */
-
-	#footer {
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		width: 100%;
-		max-width: 100%;
-		margin-top: 2rem;
-		text-align: center;
-	}
-
+	  /* Footer */
+	  @media screen and (max-width: 600px) {
+		  a.link-container.image{
+			  margin-right: 40px;
+		  }
+  
+	  }
+	  
+	  #footer {
+		  -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		  -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		  -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		  transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		  width: 100%;
+		  max-width: 100%;
+		  margin-top: 2rem;
+		  text-align: center;
+		}
+		
 		#footer .copyright {
 			letter-spacing: 0.2rem;
 			font-size: 0.6rem;
