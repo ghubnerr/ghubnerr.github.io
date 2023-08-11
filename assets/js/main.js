@@ -400,39 +400,74 @@
 
 	$(document).ready(function() {
 
-		const scrollDownButton = $('#scrollButton')
+		const scrollDownButton1 = $('#scrollButton1')
 
 		$(window).scroll(function() {
 		if ($(this).scrollTop() < 100) {
-		scrollDownButton.css('opacity', 1);
+		scrollDownButton1.css('opacity', 1);
 		} else {
-		scrollDownButton.css('opacity', 0);
+		scrollDownButton1.css('opacity', 0);
 		}
 	})
-		scrollDownButton.on('click', function() {
-		scrollToBottom();
+		scrollDownButton1.on('click', function() {
+		scrollToBottom1();
 	});
 
-	function scrollToBottom() {
+	function scrollToBottom1() {
 		$('html, body').animate({ scrollTop: $(document).height() }, 'easeInOutExpo');
 	}
 	});
 
 	$(document).ready(function() {
-		const scrollToTopButton = $('#scrollToTopButton');
+		const scrollToTopButton1 = $('#scrollToTopButton1');
 	  
 		$(window).scroll(function() {
 		  if ($(this).scrollTop() > 100) {
-			scrollToTopButton.fadeIn();
+			scrollToTopButton1.fadeIn();
 		  } else {
-			scrollToTopButton.fadeOut();
+			scrollToTopButton1.fadeOut();
 		  }
 		});
 	  
-		scrollToTopButton.click(function() {
+		scrollToTopButton1.click(function() {
 		  $('html, body').animate({ scrollTop: 0 }, 'easeInOutExpo');
 		});
 	  });
 
+	  $(document).ready(function() {
+
+		const scrollDownButton2 = $('#scrollButton2')
+
+		$(window).scroll(function() {
+		if ($(this).scrollTop() < 100) {
+		scrollDownButton2.css('opacity', 1);
+		} else {
+		scrollDownButton2.css('opacity', 0);
+		}
+	})
+		scrollDownButton2.on('click', function() {
+		scrollToBottom2();
+	});
+
+	function scrollToBottom2() {
+		$('html, body').animate({ scrollTop: $(document).height() }, 'easeInOutExpo');
+	}
+	});
+
+	$(document).ready(function() {
+		const scrollToTopButton2 = $('#scrollToTopButton2');
+	  
+		$(window).scroll(function() {
+		  if ($(this).scrollTop() > 100) {
+			scrollToTopButton2.fadeIn();
+		  } else {
+			scrollToTopButton2.fadeOut();
+		  }
+		});
+	  
+		scrollToTopButton2.click(function() {
+		  $('html, body').animate({ scrollTop: 0 }, 'easeInOutExpo');
+		});
+	  });
 
 })(jQuery);
