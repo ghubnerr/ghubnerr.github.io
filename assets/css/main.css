@@ -1703,6 +1703,14 @@ input, select, textarea {
 		  .phone {
 			display: block;
 		  }
+
+		  #scrollButton1{
+			display: none
+		  }
+
+		  #scrollButton2{
+			display: none
+		  }
   
 	  }
 	  
