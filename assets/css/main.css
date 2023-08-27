@@ -1079,9 +1079,14 @@ input, select, textarea {
 			line-height: 2.0625rem;
 		}
 		
-		#scrollButton {
+		#scrollButton1 {
 			opacity: 1;
-			transition: opacity 1s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+		  }
+
+		  #scrollButton2 {
+			opacity: 1;
+			transition: opacity 0.5s ease-in-out;
 		  }
 
 		input[type="submit"].primary,
@@ -1636,7 +1641,11 @@ input, select, textarea {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
 			
-			button#scrollButton {
+			button#scrollButton1 {
+				display: none;
+
+			}
+			button#scrollButton2 {
 				display: none;
 
 			}
