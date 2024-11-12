@@ -3,7 +3,7 @@ const querystring = require('querystring');
 
 const GITHUB_CLIENT_ID = process.env.OAUTH_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.OAUTH_CLIENT_SECRET;
-const NETLIFY_REDIRECT_URI = "https://gabehubner.netlify.app/.netlify/functions/auth";
+const NETLIFY_REDIRECT_URI = "https://gabehubner.netlify.app/auth/github/callback"; // Updated URI
 
 const auth = async (event) => {
   const { provider, code } = querystring.parse(event.queryStringParameters);
@@ -18,7 +18,7 @@ const auth = async (event) => {
           client_id: GITHUB_CLIENT_ID,
           client_secret: GITHUB_CLIENT_SECRET,
           code,
-          redirect_uri: NETLIFY_REDIRECT_URI,
+          redirect_uri: NETLIFY_REDIRECT_URI, // Updated URI here as well
         }),
         {
           headers: { 'Accept': 'application/json' },
@@ -56,7 +56,7 @@ const auth = async (event) => {
   }
 
   // Step 5: Redirect to GitHub OAuth if no code is provided
-  const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${NETLIFY_REDIRECT_URI}`;
+  const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${NETLIFY_REDIRECT_URI}`; // Updated URI here as well
   return {
     statusCode: 302,
     headers: { Location: githubAuthUrl },
