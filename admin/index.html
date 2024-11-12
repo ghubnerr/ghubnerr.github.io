@@ -7,18 +7,9 @@
   </head>
   <body>
     <div id="ncms"></div>
-    <div id="debug"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/netlify-cms@2.10.1/dist/netlify-cms.js"></script>
     <script>
-      // Debug logging
-      const debug = document.getElementById("debug");
-      function log(message, data) {
-        console.log(message, data);
-        debug.innerHTML += `<p>${message}: ${JSON.stringify(data)}</p>`;
-      }
-
-      // Function to get URL parameters
       function getUrlParameter(name) {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(name);
@@ -27,63 +18,44 @@
       // Check for error parameter
       const error = getUrlParameter("error");
       if (error) {
-        log("Authentication Error", error);
+        console.error("Authentication Error:", error);
+        // You might want to show this error to the user
       }
 
       // Function to check if we have a valid session
       function checkSession() {
-        const cookies = document.cookie.split(";").reduce((acc, cookie) => {
-          const [key, value] = cookie.trim().split("=");
-          acc[key] = value;
-          return acc;
-        }, {});
-
-        log("Current cookies", cookies);
-
-        return (
-          cookies.token ||
-          cookies.github_token ||
-          Object.keys(cookies).some((key) => key.includes("netlifycms"))
-        );
+        return document.cookie
+          .split(";")
+          .some((item) => item.trim().startsWith("token="));
       }
 
-      // Initialize CMS with debug logging
+      // Initialize CMS
       function initCMS() {
-        log("Initializing CMS", { timestamp: Date.now() });
-
         CMS.init({
           config: {
             backend: {
               name: "github",
-              repo: "yourusername/yourrepo", // Replace with your repository
+              repo: "ghubnerr/ghubnerr.github.io", // Replace with your repository
               base_url: window.location.origin,
               auth_endpoint: "/.netlify/functions/auth",
             },
-            load_config_file: false,
             media_folder: "assets/images",
             public_folder: "/assets/images",
             collections: [
-              // Your collections configuration here
+              // Your collections configuration
             ],
           },
         });
       }
 
-      // Main initialization logic with delay to ensure cookies are set
-      setTimeout(() => {
-        if (checkSession()) {
-          log("Session found, initializing CMS", { timestamp: Date.now() });
-          initCMS();
-        } else {
-          log("No session found, redirecting to auth", {
-            timestamp: Date.now(),
-          });
-          // Add a small delay before redirect to avoid immediate loops
-          setTimeout(() => {
-            window.location.href = "/.netlify/functions/auth";
-          }, 1000);
-        }
-      }, 1000);
+      // Main initialization logic
+      if (checkSession()) {
+        console.log("Session found, initializing CMS");
+        initCMS();
+      } else {
+        console.log("No session found, redirecting to auth");
+        window.location.href = "/.netlify/functions/auth";
+      }
     </script>
   </body>
 </html>
