@@ -1,6 +1,25 @@
+# _config.yml
 title: Gabe's Blog
 description: Coding and Yapping
-theme: jekyll-theme-minimal
-github:
-  is_project_page: true
-  repository_url: "https://github.com/ghubnerr/ghubnerr.github.io"
+baseurl: ""
+url: "https://gabehubner.netlify.app"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

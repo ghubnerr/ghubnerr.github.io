@@ -1,26 +1,29 @@
 <!-- _layouts/project.html -->
 --- layout: default ---
 <article class="project">
-  <header>
+  <div class="project-header">
     <h1>{{ page.title }}</h1>
-    <img src="{{ page.image }}" alt="{{ page.title }}" />
-  </header>
-
-  <div class="project-content">{{ content }}</div>
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="project-image" />
+  </div>
 
   <div class="project-meta">
-    <h3>Technologies</h3>
-    <ul class="tech-list">
+    <div class="tech-stack">
       {% for tech in page.tech %}
-      <li>{{ tech }}</li>
+      <span class="tech-tag">{{ tech }}</span>
       {% endfor %}
-    </ul>
+    </div>
 
     <div class="project-links">
-      <a href="{{ page.github_link }}" class="button">View on GitHub</a>
+      <a href="{{ page.github_link }}" class="button github" target="_blank">
+        <i class="fab fa-github"></i> View Code
+      </a>
       {% if page.demo_link %}
-      <a href="{{ page.demo_link }}" class="button">Live Demo</a>
+      <a href="{{ page.demo_link }}" class="button demo" target="_blank">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a>
       {% endif %}
     </div>
   </div>
+
+  <div class="project-content">{{ content }}</div>
 </article>
