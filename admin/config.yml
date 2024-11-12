@@ -4,7 +4,6 @@ backend:
   repo: ghubnerr/ghubnerr.github.io
   branch: blog
   base_url: https://api.netlify.com
-  auth_endpoint: /.netlify/functions/auth
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
