@@ -3,16 +3,11 @@ backend:
   name: github
   repo: ghubnerr/ghubnerr.github.io
   branch: main
-  base_url: https://gabehubner.netlify.app
-  auth_endpoint: auth
+  base_url: https://api.netlify.com
+  auth_endpoint: auth/github
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
-
-media_library:
-  name: uploadcare
-  config:
-    publicKey: your-uploadcare-public-key
 
 collections:
   - name: "posts"
