@@ -1,7 +1,22 @@
 [build]
+publish = "_site"
+command = "bundle exec jekyll build"
 functions = "netlify/functions"
+
+[[redirects]]
+from = "/admin/*"
+to = "/admin/index.html"
+status = 200
 
 [[redirects]]
 from = "/api/*"
 to = "/.netlify/functions/:splat"
 status = 200
+
+[identity]
+enabled = true
+
+[[identity.providers]]
+provider = "github"
+client_id = "${OAUTH_CLIENT_ID}"
+client_secret = "${OAUTH_CLIENT_SECRET}"
