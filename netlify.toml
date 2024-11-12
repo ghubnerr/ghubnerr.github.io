@@ -5,4 +5,4 @@ status = 200
 force = true
 
 [build.environment]
-NODE_VERSION = "18.x"
+NODE_VERSION = "18.20.4"
