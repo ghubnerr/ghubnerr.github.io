@@ -1,1 +1,1 @@
-/auth/* /.netlify/functions/auth/:splat 200
+/auth/github/callback /.netlify/functions/auth 200
