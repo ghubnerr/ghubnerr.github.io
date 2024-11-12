@@ -1,4 +1,3 @@
-# _config.yml
 title: Gabe's Blog
 description: Coding and Yapping
 baseurl: ""
@@ -27,20 +26,23 @@ defaults:
 markdown: kramdown # Ensure Markdown is supported
 highlighter: rouge # Code highlighting
 permalink: pretty # Pretty URLs without file extensions
+
 plugins:
   - jekyll-redirect-from
 
 netlify_cms:
+  # Path to CMS config file
   config_path: "/admin/config.yml"
 
-# For media files like images
+# Asset configuration for images
 assets:
-  media_folder: "assets/images"
-  public_folder: "/assets/images"
+  media_folder: "assets/images" # Folder for media uploads
+  public_folder: "/assets/images" # Public URL for media
 
+# Disable Netlify Identity and configure GitHub as OAuth provider
 identity:
-  enabled: true
-  provider: github
+  enabled: false # Disable Netlify Identity
+  provider: github # Use GitHub for authentication
 
 admin:
-  path: /admin
+  path: /admin # Path to the Netlify CMS admin panel

@@ -1,20 +1,19 @@
-# admin/config.yml
 backend:
   name: github
-  repo: ghubnerr/ghubnerr.github.io
-  branch: main
-  auth_endpoint: auth
-  base_url: https://gabehubner.netlify.app/.netlify/functions
+  repo: ghubnerr/ghubnerr.github.io # GitHub repository for storing content
+  branch: blog # Branch for storing CMS-managed content
+  base_url: https://api.netlify.com # Required for GitHub authentication via Netlify
+  auth_endpoint: /auth/github # Adjusted GitHub auth callback
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "assets/images" # Folder in the repo for uploaded media files
+public_folder: "/assets/images" # Folder on the site for public media access
 
 collections:
   - name: "posts"
     label: "Blog Posts"
-    folder: "_posts"
+    folder: "_posts" # Folder where blog posts are stored
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Slug format for blog posts
     editor:
       preview: true
     fields:
@@ -27,9 +26,9 @@ collections:
 
   - name: "projects"
     label: "Projects"
-    folder: "_projects"
+    folder: "_projects" # Folder where projects are stored
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}" # Slug format for projects
     fields:
       - {
           label: "Layout",
@@ -50,7 +49,7 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
 
+# Optional admin settings for Netlify CMS
 admin:
-  enabled: true
   auth:
-    github: "ghubnerr" # Only allow this GitHub username to log in
+    github: "ghubnerr" # Restrict access to this GitHub user

@@ -1,12 +1,11 @@
 const axios = require('axios');
 const querystring = require('querystring');
-const { parse } = require('url');
 
 const GITHUB_CLIENT_ID = process.env.OAUTH_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.OAUTH_CLIENT_SECRET;
 const NETLIFY_REDIRECT_URI = "https://gabehubner.netlify.app/.netlify/functions/auth";
 
-const auth = async (event, context) => {
+const auth = async (event) => {
   const { provider, code } = querystring.parse(event.queryStringParameters);
 
   // Step 1: Check for a code parameter in the request
@@ -18,32 +17,30 @@ const auth = async (event, context) => {
         querystring.stringify({
           client_id: GITHUB_CLIENT_ID,
           client_secret: GITHUB_CLIENT_SECRET,
-          code: code,
+          code,
           redirect_uri: NETLIFY_REDIRECT_URI,
         }),
         {
-          headers: {
-            'Accept': 'application/json',
-          },
+          headers: { 'Accept': 'application/json' },
         }
       );
 
-      // Step 3: Get the user data from GitHub using the access token
       const accessToken = response.data.access_token;
+
+      // Step 3: Retrieve user data with the access token
       const userResponse = await axios.get('https://api.github.com/user', {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
+        headers: { Authorization: `Bearer ${accessToken}` },
       });
+      const { login, name, avatar_url } = userResponse.data;
 
-      const user = userResponse.data;
-
-      // Step 4: Return the user data or create a Netlify Identity session
-      const { login, name, avatar_url } = user;
-      
-      // This can be extended to create a user session, store in a database, etc.
+      // Step 4: Set a session cookie with the access token
       return {
         statusCode: 200,
+        headers: {
+          'Set-Cookie': `token=${accessToken}; HttpOnly; Path=/; Max-Age=3600`, // 1-hour session
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
           message: 'GitHub Authentication Successful',
           user: { login, name, avatar_url },
@@ -58,13 +55,11 @@ const auth = async (event, context) => {
     }
   }
 
-  // Step 5: Redirect to GitHub OAuth authorization page if no code is provided
+  // Step 5: Redirect to GitHub OAuth if no code is provided
   const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${NETLIFY_REDIRECT_URI}`;
   return {
     statusCode: 302,
-    headers: {
-      Location: githubAuthUrl,
-    },
+    headers: { Location: githubAuthUrl },
   };
 };
 
