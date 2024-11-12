@@ -1,0 +1,6 @@
+title: Gabe's Blog
+description: Coding and Yapping
+theme: jekyll-theme-minimal
+github:
+  is_project_page: true
+  repository_url: "https://github.com/ghubnerr/ghubnerr.github.io"

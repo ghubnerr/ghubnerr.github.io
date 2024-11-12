@@ -1,0 +1,36 @@
+# admin/config.yml
+backend:
+  name: github
+  repo: username/username.github.io
+  branch: main
+  base_url: https://api.github.com
+  auth_endpoint: auth
+
+media_folder: "assets/images/projects"
+public_folder: "/assets/images/projects"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "project",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Technologies", name: "tech", widget: "list" }
+      - { label: "GitHub Link", name: "github_link", widget: "string" }
+      - {
+          label: "Live Demo",
+          name: "demo_link",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
