@@ -29,3 +29,11 @@ highlighter: rouge # Code highlighting
 permalink: pretty # Pretty URLs without file extensions
 plugins:
   - jekyll-redirect-from
+
+include:
+  - "_pages"
+  - "admin"
+
+netlify_cms:
+  path: admin
+  preview_styles: true

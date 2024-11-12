@@ -1,8 +1,10 @@
 # admin/config.yml
 backend:
-  name: git-gateway
+  name: github
   repo: ghubnerr/ghubnerr.github.io
-  branch: blog
+  branch: main
+  auth_endpoint: auth
+  base_url: https://gabehubner.netlify.app/.netlify/functions
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
