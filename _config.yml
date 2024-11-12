@@ -23,3 +23,9 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+
+markdown: kramdown # Ensure Markdown is supported
+highlighter: rouge # Code highlighting
+permalink: pretty # Pretty URLs without file extensions
+plugins:
+  - jekyll-redirect-from
