@@ -1,8 +1,19 @@
 [[redirects]]
-from = "/auth/*"
-to = "/.netlify/functions/auth/:splat"
+from = "/.netlify/functions/auth"
+to = "/.netlify/functions/auth"
 status = 200
 force = true
 
+[build]
+functions = "netlify/functions"
+
 [build.environment]
 NODE_VERSION = "18.20.4"
+
+[dev]
+framework = "#custom"
+command = "jekyll serve"
+targetPort = 4000
+port = 8888
+publish = "_site"
+autoLaunch = true

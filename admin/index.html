@@ -1,61 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Panel</title>
+    <title>Content Manager</title>
   </head>
   <body>
-    <div id="ncms"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/netlify-cms@2.10.1/dist/netlify-cms.js"></script>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
-      function getUrlParameter(name) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
-      }
+      CMS.registerBackend("github", {
+        init: () => ({
+          isGitBackend: true,
+        }),
+      });
 
-      // Check for error parameter
-      const error = getUrlParameter("error");
-      if (error) {
-        console.error("Authentication Error:", error);
-        // You might want to show this error to the user
-      }
+      // Custom auth endpoint
+      window.netlifyIdentity = {
+        on: () => {},
+      };
 
-      // Function to check if we have a valid session
-      function checkSession() {
-        return document.cookie
-          .split(";")
-          .some((item) => item.trim().startsWith("token="));
-      }
-
-      // Initialize CMS
-      function initCMS() {
-        CMS.init({
-          config: {
-            backend: {
-              name: "github",
-              repo: "ghubnerr/ghubnerr.github.io", // Replace with your repository
-              base_url: window.location.origin,
-              auth_endpoint: "/.netlify/functions/auth",
-            },
-            media_folder: "assets/images",
-            public_folder: "/assets/images",
-            collections: [
-              // Your collections configuration
-            ],
-          },
-        });
-      }
-
-      // Main initialization logic
-      if (checkSession()) {
-        console.log("Session found, initializing CMS");
-        initCMS();
-      } else {
-        console.log("No session found, redirecting to auth");
-        window.location.href = "/.netlify/functions/auth";
-      }
+      CMS.init();
     </script>
   </body>
 </html>
