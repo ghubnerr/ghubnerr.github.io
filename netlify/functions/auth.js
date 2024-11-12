@@ -1,12 +1,12 @@
 exports.handler = async (event, context) => {
-  // Check for GET method
   if (event.httpMethod !== 'GET') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
-  // Safely parse query parameters instead of body
-  const code = event.queryStringParameters?.code;
-  
+  // Get code from query parameters instead of body
+  const params = new URLSearchParams(event.queryStringParameters);
+  const code = params.get('code');
+
   if (!code) {
     return { 
       statusCode: 400, 
