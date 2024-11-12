@@ -1,10 +1,10 @@
 # admin/config.yml
 backend:
   name: github
-  repo: ghubnerr/ghubnerr.github.io # Your GitHub repository name
+  repo: ghubnerr/ghubnerr.github.io
   branch: main
   auth_endpoint: auth
-  base_url: https://gabehubner.netlify.app/.netlify/functions # Netlify Functions URL
+  base_url: https://gabehubner.netlify.app/.netlify/functions
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
