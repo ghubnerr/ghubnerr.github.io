@@ -1,252 +1,262 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Gabriel Lucchesi</title>
+		<title>Gabriel Lucchesi - Under Construction</title>
 		<meta charset="utf-8" />
-		<meta http-equiv="refresh" content="0; URL='https://github.com/ghubnerr'" />
+		<meta http-equiv="refresh" content="5; URL='https://github.com/ghubnerr'" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Hi! My name is Gabriel Lucchesi! I'm an aspiring software developer and AI Engineer from Brazil, and a Computer Science Sophomore at Florida International University - Miami, FL">
-		<meta name="keywords" content="personal, website, software, development, internship">
+		<meta name="description" content="Gabriel Lucchesi's website is under construction - redirecting to GitHub">
 		<meta name="author" content="Gabriel Lucchesi">
-		<meta property="og:title" content="Gabriel Lucchesi's Personal Website">
-		<meta property="og:description" content="Hi! My name is Gabriel Lucchesi! I'm an aspiring software developer and AI Engineer from Brazil, and a Computer Science Sophomore at Florida International University - Miami, FL">
-		<meta property="og:image" content="images/pic01.jpg">
-		<meta property="og:url" content="https://ghubnerr.github.io">
-		<meta property="og:type" content="website">
-		<meta name="twitter:card" content="images/pic01.jpg">
-		<meta name="twitter:title" content="Gabriel Lucchesi's Personal Website">
-		<meta name="twitter:description" content="Hi! My name is Gabriel Lucchesi! I'm an aspiring software developer and AI Engineer from Brazil, and a Computer Science Sophomore at Florida International University - Miami, FL">
-		<meta name="twitter:image" content="images/pic01.jpg">
 		<link rel="icon" href="images/me.svg">
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background: linear-gradient(135deg, #2d5016 0%, #3e6b1f 50%, #4a7c23 100%);
+				color: white;
+				min-height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				overflow: hidden;
+			}
+
+			.construction-container {
+				text-align: center;
+				padding: 2rem;
+				max-width: 600px;
+				z-index: 10;
+			}
+
+			.construction-icon {
+				font-size: 4rem;
+				margin-bottom: 1rem;
+				animation: bounce 2s infinite;
+			}
+
+			@keyframes bounce {
+				0%, 20%, 50%, 80%, 100% {
+					transform: translateY(0);
+				}
+				40% {
+					transform: translateY(-20px);
+				}
+				60% {
+					transform: translateY(-10px);
+				}
+			}
+
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				background: linear-gradient(45deg, #fff, #f0f0f0);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.subtitle {
+				font-size: 1.2rem;
+				margin-bottom: 2rem;
+				opacity: 0.9;
+			}
+
+			.progress-container {
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 25px;
+				padding: 10px;
+				margin: 2rem 0;
+				backdrop-filter: blur(10px);
+			}
+
+			.progress-bar {
+				height: 8px;
+				background: linear-gradient(90deg, #4afe6b, #00fe88);
+				border-radius: 20px;
+				width: 0%;
+				animation: loading 5s linear forwards;
+				box-shadow: 0 2px 10px rgba(79, 254, 107, 0.5);
+			}
+
+			@keyframes loading {
+				to {
+					width: 100%;
+				}
+			}
+
+			.redirect-message {
+				background: rgba(255, 255, 255, 0.15);
+				padding: 1.5rem;
+				border-radius: 15px;
+				margin: 2rem 0;
+				backdrop-filter: blur(10px);
+				border: 1px solid rgba(255, 255, 255, 0.2);
+			}
+
+			.countdown {
+				font-size: 2rem;
+				font-weight: bold;
+				color: #4afe6b;
+				margin: 1rem 0;
+			}
+
+			.tools {
+				display: flex;
+				justify-content: center;
+				gap: 2rem;
+				margin: 2rem 0;
+				flex-wrap: wrap;
+			}
+
+			.tool {
+				animation: float 3s ease-in-out infinite;
+				font-size: 2rem;
+			}
+
+			.tool:nth-child(1) { animation-delay: 0s; }
+			.tool:nth-child(2) { animation-delay: 0.5s; }
+			.tool:nth-child(3) { animation-delay: 1s; }
+			.tool:nth-child(4) { animation-delay: 1.5s; }
+
+			@keyframes float {
+				0%, 100% {
+					transform: translateY(0px);
+				}
+				50% {
+					transform: translateY(-15px);
+				}
+			}
+
+			.github-link {
+				display: inline-block;
+				background: rgba(255, 255, 255, 0.2);
+				padding: 12px 24px;
+				border-radius: 25px;
+				text-decoration: none;
+				color: white;
+				border: 2px solid rgba(255, 255, 255, 0.3);
+				transition: all 0.3s ease;
+				backdrop-filter: blur(10px);
+			}
+
+			.github-link:hover {
+				background: rgba(255, 255, 255, 0.3);
+				transform: translateY(-2px);
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			}
+
+			.particles {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+			}
+
+			.particle {
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				background: rgba(255, 255, 255, 0.6);
+				border-radius: 50%;
+				animation: twinkle 3s infinite;
+			}
+
+			@keyframes twinkle {
+				0%, 100% { opacity: 0; }
+				50% { opacity: 1; }
+			}
+
+			@media (max-width: 768px) {
+				h1 { font-size: 2rem; }
+				.subtitle { font-size: 1rem; }
+				.construction-container { padding: 1rem; }
+				.tools { gap: 1rem; }
+			}
+		</style>
 	</head>
-	<body class="is-preload">
-
-			<div id="wrapper">
-
-					<header id="header">
-						<div class="logo">
-							<svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 640 512">	<style>svg{fill:#ffffff}</style><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>						</div>
-						<div class="content">
-							<div class="inner">
-								<p class="none"><strong>Hello</strong>! I'm glad you're here! My name is</p>
-								<h1><a href="#about-me">Gabriel Lucchesi</a></h1>
-								<p>I'm an <strong>aspiring software developer and A.I. Engineer</strong> from <b>Brazil</b><br/> and a C.S Sophomore at <strong>Florida International University</strong> - Miami, FL</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#about-me">About Me</a></li>
-								<li><a href="#my-work">My Work</a></li>
-								<li><a href="#contacts">Contacts</a></li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Overview -->
-							<article id="about-me">
-								<div style="display: flex; justify-content: space-between;">
-									<h2 class="major" >About Me</h2>
-									<div style="display: flex; justify-content: right;">
-										<ul class="actions">
-											<li><a href="https://docs.google.com/document/d/1dM3orrLWaUFPrz0CQTwngYZS-Up3N-4uWKY1YJ__XIo/edit?usp=sharing"
-												class="button small primary icon solid fa-download"  style="margin-right: 20px;">Resume</a></li>
-										</ul>
-										<button class="small" id="scrollButton1">Scroll Down</button>	
-									</div>
-								</div>
-								<span class="image main"><img src="images/pic01.jpg" alt="Portrait image of Gabriel Lucchesi" /></span>
-								<blockquote>Hey there! My name is Gabriel Lucchesi. I'm very passionate about technology and programming. I wish to specialize in Software Engineering and Artificial Intelligence to develop innovative and creative solutions in hopes of doing some form of good to the world and helping people around me in the best way I can :)  </blockquote>
-								<h3>Passions and Interests</h3>
-								<p style="margin-bottom: 15px;">Some of the biggests joys in my life is being able to learn new and useful things. And, as impressive as it may sound, that also applies to machines and computer programs. I firmly believe that Machine Learning and Artificial Intelligence-guided technologies are the driving power of the future-- the least I could do is to want to be a part of it! </p>
-								<p style="margin-bottom: 15px;">I've always been a fan of Neuroscience, but working with Deep Learning models and Natural Language Processing more than rekindled that passion. It really amazes how we're able to encode the architecture behind how brains work so that machines begin to think like us, especially when it comes to language understanding.</p>
-								<p><strong>I currently lead two projects on Artificial Intelligence on campus</strong>, each touching distinct but correlated aread of Machine Learing -- Vision Transformers and Multi-agent traning with Reinforement Learning. My goal for the near future is to create real-life and full-stack projects that integrate and leverage the power of A.I. to bring intelligent software to the hands of people that need it.</p>
-								<p><b>Other interests:</b> Quantum Computing and QML, Education, Astronomy and Astrophysics, Sci-fi & Cinema</p> 
-								<h5>Latest Readings</h5>
-								<p style="margin-bottom: 15px;">The Psychology of Money, Data Structures & Algorithms in Python, Introduction to Algorithms (In Progress), The Buried Giant</p> 
-								<hr>
-								<h3>Skills and <a href="#my-work">My work</a></h3>
-								<p style="margin-bottom: 15px;">Here are some of the languages, frameworks, libraries and platforms I like using!</p>
-								<ul class="alt">
-									<li>
-										<b>Programming Languages:</b> Python, Java, JavaScript, C, C#, Swift
-									</li>
-									<li>
-										<b>Front-End Development:</b> React.js, Next.js, TailwindCSS, Bootstrap, TS, EJS, HTML, CSS
-									</li>
-									<li>
-										<b>Back-End Development:</b> Node.js, Express, MongoDB, PostgreSQL, Flask, OAuth 2.0
-									</li>
-									<li>
-										<b>Data Science & ML:</b> Matplotlib, Seaborn, Pandas, Numpy, TensorFlow, Scikit-learn
-									</li>
-									<li>
-										<b>Cloud Development:</b> Azure & Azure Machine Learning Fundamentals, Google Vertex AI 
-									</li>
-									<li>
-										<b>Graphics and Animation:</b> Adobe Illustrator, Figma, Canva, Movavi
-									</li>
-								</ul>
-								<img src="images/FIU.jpg" width="100%" height="auto" class="image main"/>
-								<p>I'm currently a rising sophomore at Florida International University. I'm pursing a <b>Bachelor of Science in Computer Science!</b> I hope to graduate on <b>Spring 2026</b>.</p>
-								<h3>Relevant CourseWork - GPA 4.0</h3>
-								<ol>
-									<li>
-										Data Structures (as of Spring 2024)
-									</li>
-									<li>
-										Discrete Structures
-									</li>
-									<li>
-										Statistics for Computer Science
-									</li>
-									<li>
-										Programming I-II
-									</li>
-									<li>
-										Calculus I-II
-									</li>
-									<li>
-										English for Professional and Technical Writing
-									</li>
-									<li>
-										Introduction to Computer Science
-									</li>
-									
-								</ol>
-								<button class="small" id="scrollToTopButton1" style='margin-bottom:10px'">Go Back Up</button>
-							</article>
-
-						<!-- My Work -->
-							<article id="my-work">
-								<div style="display: flex; justify-content: space-between;">
-									<h2 class="major" >My Work</h2>
-									<div style="display: flex; justify-content: right;">
-										<ul class="actions">
-											<li><a href="https://docs.google.com/document/d/1dM3orrLWaUFPrz0CQTwngYZS-Up3N-4uWKY1YJ__XIo/edit?usp=sharing" class="button small primary icon solid fa-download" style="margin-right: 20px;">Resume</a></li>
-										</ul>
-										<button class="small" id="scrollButton2">Scroll Down</button>	
-									</div>	
-								</div>
-								<pre><code>My 'Projects' section is still in development! <br/>Visit my <a href="#contacts">GitHub</a> to see what I've been working on.<br>I should have everything in here really soon!</code></pre>
-								<hr />
-								<div style="display: flex; justify-content: start; align-self: center;">
-									<h3>INIT - FIU</h3>
-									<svg class="phone" style="margin-left: 10px; padding-bottom: 5px;"fill="#000000" height="25px" width="25px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-									viewBox="0 0 312.513 312.513" xml:space="preserve">
-<g>
-	<circle cx="97.106" cy="210.198" r="8.35"/>
-	<path d="M286.322,135.845H148.707V63.583c0-14.442-11.749-26.191-26.191-26.191H26.191C11.749,37.392,0,49.141,0,63.583V258.36
-		c0,14.442,11.749,26.191,26.191,26.191h65.354h22.618h172.16c14.442,0,26.191-11.75,26.191-26.191v-96.324
-		C312.513,147.594,300.764,135.845,286.322,135.845z M126.568,153.845h13.129c0.003,0,0.006,0,0.01,0s0.006,0,0.01,0h121.511
-		v112.707h-134.66V153.845z M91.544,135.845c-14.442,0-26.191,11.75-26.191,26.191v61.301H18V88.677h112.707v47.167H91.544z
-		 M26.191,55.392h96.325c4.517,0,8.191,3.674,8.191,8.191v7.094H18v-7.094C18,59.066,21.674,55.392,26.191,55.392z M18,258.36
-		v-17.023h47.353v17.023c0,2.861,0.468,5.612,1.319,8.191H26.191C21.674,266.552,18,262.877,18,258.36z M83.353,258.36v-96.324
-		c0-4.517,3.675-8.191,8.191-8.191h17.023v112.707H91.544C87.028,266.552,83.353,262.877,83.353,258.36z M294.513,258.36
-		c0,4.517-3.674,8.191-8.191,8.191h-7.094V153.845h7.094c4.517,0,8.191,3.675,8.191,8.191V258.36z"/>
-	<path d="M193.506,79.835c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606
-		l-5.774-5.774c14.772,3.285,26.481,14.78,30.072,29.436l-5.583-5.583c-2.928-2.929-7.677-2.929-10.606,0
-		c-2.929,2.929-2.929,7.678,0,10.606l19.537,19.538c1.406,1.407,3.314,2.197,5.303,2.197s3.897-0.79,5.303-2.197l19.534-19.534
-		c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0L244,94.604c-3.454-24.236-22.793-43.409-47.106-46.618
-		l7.222-7.222c2.929-2.929,2.929-7.678,0-10.606c-2.929-2.929-7.678-2.929-10.606,0l-19.537,19.538
-		c-1.407,1.407-2.197,3.314-2.197,5.303s0.79,3.897,2.197,5.303L193.506,79.835z"/>
-</g>
-</svg>
-								</div>
-								<span class="image main"><img src="images/pic03.png" alt="" /></span>
-								<p>Originally a student organization known as Upsilon Pi Epsilon, INIT is now a nation-wide community of programmers and talented tech professionals that hope to bring forth and inspire talent in every individual in tech-related professions. As part of their <b>Executive Board</b> as <a href="https://www.instagram.com/init.fiu/" target="_blank" rel="noopener noreferrer">Director of Social Media</a>, I'm extremely glad to be immersed in a group of very enthusiastic programmers and leaders that push the team forward into creating something new and better every day.</p>
-								<div class="socials">
-									<div><h4 style="margin-bottom: 15px;">The ShellHacks Hackathon</h4>
-									<p>INIT is the main organizer of Florida's Largest Hackathon: <b>ShellHacks</b>. This recurrent event takes place on campus and brings 4000+ people from a variety of Universities and States to compete and submit projects towards a final common goal. Along with the other members from our E-Board team, we are coordinating marketing, technology, and others to bring out the best experience for all hackers and volunteers.</p>
-									</div>
-									<div><a href="https://shellhacks.net" target="_blank" rel="noopener noreferrer" class="link-container image" ><img src="images/shell" style="max-width: 100%; max-height: 100%; border-radius: 20px;"/></a><p style="margin-left: 40px">Click on the shell to find out more!</p></div>									
-								</div>
-								<br/>
-								<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; 
-								">
-									<div style="width: 100%;">										
-										<h3><a href="https://laprogram.fiu.edu/" target="_blank" rel="noopener noreferrer">FIU'S STEM T.I.</a></h3>
-										<img src="images/stem-ti.png" class="image main" style="height: 90;" />
-										<p>Beyond my role as a class-based LA, I also worked alongside a varied group of over 100 educators and fellow LAs to create educational directives centered around STEM, aiming to encourage practical and meaningful learning experiences that ignite students' interest in the fields of science and technology. Our ultimate goal was to bring out in the students the passion and confidence in their ability to learn whatever they wanted to.</p>
-									</div>
-									<div style="width: 100%;">										
-										<h3><a href="https://cetefe.org/" target="_blank" rel="noopener noreferrer">CETEFE</a> - Volunteer</h3>
-										<img src="images/cetefe.jpg" class="image main" style="margin-bottom: 37px;" />
-										<p>CETEFE is a Brazilian company focused on promoting inclusiveness in the job market for people with physical disabilities and impairments. I volunteered as an intern to assist in the administration of task-completion and document sorting, as well as to help those in need.  Overall, CETEFE provides significant change to the lives of those individuals through the power of opportunity, and I was glad to be able to assist with that.	</p>
-									</div>
-								</div>
-								<h3 style="margin-top: 20px;"><a href="https://www.codepath.org/" target="_blank" rel="noopener noreferrer">CodePath.org</a></h3>
-								<p>CodePath's motto is to provide early-on career experiences for students pursing degrees in tech, with a variety of programs that promote an immersion into technologies and programming languages to kickstart a person's SWE career.</p>
-								<h5>Certification in Web Development</h5>
-								<img src="images/web_dev.PNG" style="max-width: 100%; margin-bottom: 20px;" class="image main">
-								<h5>Additional Certifications:</h5>
-								<ul>
-									<li>(On track): Advanced Web Development /<i><a href="https://github.com/ghubnerr/creator-verse" target="_blank" rel="noopener noreferrer" style="border-bottom-width: 3px;">creator-verse project</a></i></li> 
-									<li>(On track): Software Engineering</li>
-								</ul>
-								<button class="small" id="scrollToTopButton2" style='margin-bottom:10px'>Go Back Up</button>
-								
-							</article>
-
-						<!-- ContactS -->
-							<article id="contacts" style="overflow: auto; padding-bottom: 40px;">
-								<h2 class="major" style="margin-bottom: 10px;">Contacts</h2>
-								<p style="margin-bottom: 10px;">Let's connect on LinkedIn and take this elsewhere! I'd love to have a chat anytime!</p>
-								<p><strong>Tip:</strong> Follow the Notion link for more info!</p>
-									
-								<div class="socials">
-									<a href="https://github.com/ghubnerr" target="_blank" rel="noopener noreferrer" id="github"> 
-										<div class="link-container">
-											<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">    <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
-											<h4>GitHub</h4>
-										</div>
-									</a>
-									<a href="https://gabriel-lucchesi.notion.site/gabriel-lucchesi/Gabriel-Lucchesi-4fa0a3723f8a452b8c937eef736f2b32" target="_blank" rel="noopener noreferrer">
-										<div class="link-container">
-											<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.716 29.2178L2.27664 24.9331C1.44913 23.9023 1 22.6346 1 21.3299V5.81499C1 3.86064 2.56359 2.23897 4.58071 2.10125L20.5321 1.01218C21.691 0.933062 22.8428 1.24109 23.7948 1.8847L29.3992 5.67391C30.4025 6.35219 31 7.46099 31 8.64426V26.2832C31 28.1958 29.4626 29.7793 27.4876 29.9009L9.78333 30.9907C8.20733 31.0877 6.68399 30.4237 5.716 29.2178Z" fill="white"></path> <path d="M11.2481 13.5787V13.3756C11.2481 12.8607 11.6605 12.4337 12.192 12.3982L16.0633 12.1397L21.417 20.0235V13.1041L20.039 12.9204V12.824C20.039 12.303 20.4608 11.8732 20.9991 11.8456L24.5216 11.6652V12.1721C24.5216 12.41 24.3446 12.6136 24.1021 12.6546L23.2544 12.798V24.0037L22.1906 24.3695C21.3018 24.6752 20.3124 24.348 19.8036 23.5803L14.6061 15.7372V23.223L16.2058 23.5291L16.1836 23.6775C16.1137 24.1423 15.7124 24.4939 15.227 24.5155L11.2481 24.6926C11.1955 24.1927 11.5701 23.7456 12.0869 23.6913L12.6103 23.6363V13.6552L11.2481 13.5787Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6749 2.96678L4.72347 4.05585C3.76799 4.12109 3.02734 4.88925 3.02734 5.81499V21.3299C3.02734 22.1997 3.32676 23.0448 3.87843 23.7321L7.3178 28.0167C7.87388 28.7094 8.74899 29.0909 9.65435 29.0352L27.3586 27.9454C28.266 27.8895 28.9724 27.1619 28.9724 26.2832V8.64426C28.9724 8.10059 28.6979 7.59115 28.2369 7.27951L22.6325 3.49029C22.0613 3.10413 21.3702 2.91931 20.6749 2.96678ZM5.51447 6.057C5.29261 5.89274 5.3982 5.55055 5.6769 5.53056L20.7822 4.44711C21.2635 4.41259 21.7417 4.54512 22.1309 4.82088L25.1617 6.96813C25.2767 7.04965 25.2228 7.22563 25.0803 7.23338L9.08387 8.10336C8.59977 8.12969 8.12193 7.98747 7.73701 7.7025L5.51447 6.057ZM8.33357 10.8307C8.33357 10.311 8.75341 9.88177 9.29027 9.85253L26.203 8.93145C26.7263 8.90296 27.1667 9.30534 27.1667 9.81182V25.0853C27.1667 25.604 26.7484 26.0328 26.2126 26.0633L9.40688 27.0195C8.8246 27.0527 8.33357 26.6052 8.33357 26.0415V10.8307Z" fill="#000000"></path> </g></svg>
-											<h4>Notion</h4>
-										</div>
-									</a>
-									<a href="https://www.linkedin.com/in/gabriel-lucchesi" target="_blank" rel="noopener noreferrer">
-										<div class="link-container">
-											<svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>											<h4>LinkedIn</h4>
-										</div>
-									</a>
-									<a href="https://discord.com/users/388119350735011841" target="_blank" rel="noopener noreferrer">
-										<div class="link-container">
-											<svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#ffffff" fill-rule="nonzero"> </path> </g> </g></svg>
-											<h4>Discord</h4>
-										</div>
-									</a>
-									<p>
-										Email: <a href="mailto: glucc002@fiu.edu" style="border-width: 0pt; border-bottom: 2pt;">glucc002@fiu.edu</a> <br>Phone Number: +1 305 561 8048
-									</p>
-									
-								</div>
-							
-							</article>
-
-
-
-					</div>
-
-					<footer id="footer">
-						<p class="copyright"><a href="https://gabriel-lucchesi.notion.site/gabriel-lucchesi/Gabriel-Lucchesi-4fa0a3723f8a452b8c937eef736f2b32">Find Me On Notion</a></p>
-					</footer>
-
+	<body>
+		<div class="particles" id="particles"></div>
+		
+		<div class="construction-container">
+			<div class="construction-icon">🚧</div>
+			<h1>Site Under Construction</h1>
+			<p class="subtitle">Hey there! I'm refurbishing my website to make it even better!</p>
+			
+			<div class="tools">
+				<span class="tool">⚡</span>
+				<span class="tool">🔧</span>
+				<span class="tool">💻</span>
+				<span class="tool">✨</span>
 			</div>
 
-			<div id="bg"></div>
+			<div class="progress-container">
+				<div class="progress-bar"></div>
+			</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<div class="redirect-message">
+				<p>🚀 <strong>You'll be redirected to my GitHub in:</strong></p>
+				<div class="countdown" id="countdown">5</div>
+				<p>Where you can check out all my latest projects!</p>
+			</div>
 
+			<a href="https://github.com/ghubnerr" class="github-link">
+				Take Me There Now! 🎯
+			</a>
+
+			<p style="margin-top: 2rem; opacity: 0.8; font-size: 0.9rem;">
+				Thanks for your patience! 🤍<br>
+				- Gabriel Lucchesi
+			</p>
+		</div>
+
+		<script>
+			// Countdown timer
+			let timeLeft = 5;
+			const countdownElement = document.getElementById('countdown');
+			
+			const timer = setInterval(() => {
+				timeLeft--;
+				countdownElement.textContent = timeLeft;
+				
+				if (timeLeft <= 0) {
+					countdownElement.textContent = 'Redirecting...';
+					clearInterval(timer);
+				}
+			}, 1000);
+
+			// Create floating particles
+			function createParticles() {
+				const particlesContainer = document.getElementById('particles');
+				const particleCount = 50;
+
+				for (let i = 0; i < particleCount; i++) {
+					const particle = document.createElement('div');
+					particle.className = 'particle';
+					particle.style.left = Math.random() * 100 + '%';
+					particle.style.top = Math.random() * 100 + '%';
+					particle.style.animationDelay = Math.random() * 3 + 's';
+					particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+					particlesContainer.appendChild(particle);
+				}
+			}
+
+			// Initialize particles when page loads
+			createParticles();
+
+			// Add some interactive hover effects
+			document.addEventListener('mousemove', (e) => {
+				const container = document.querySelector('.construction-container');
+				const x = (e.clientX / window.innerWidth) * 20 - 10;
+				const y = (e.clientY / window.innerHeight) * 20 - 10;
+				container.style.transform = `translate(${x}px, ${y}px)`;
+			});
+		</script>
 	</body>
 </html>
