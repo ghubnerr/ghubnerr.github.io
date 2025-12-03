@@ -8,16 +8,13 @@
 
 name: "Lighthouse Badger"
 
-permissions:
-  contents: write
-
 ########################################################################
 # DEFINE YOUR INPUTS AND TRIGGERS IN THE FOLLOWING
 ########################################################################
 
 # INPUTS as Secrets (env) for not manually triggered workflows
 env:
-  URLS: https://alshedivat.github.io/al-folio/
+  URLS: https://ghubner.github.io/
   # If any of the following env is blank, a default value is used instead
   REPO_BRANCH: "${{ github.repository }} master" # target repository & branch e.g. 'dummy/mytargetrepo main'
   MOBILE_LIGHTHOUSE_PARAMS: "--only-categories=performance,accessibility,best-practices,seo --throttling.cpuSlowdownMultiplier=2"
@@ -26,8 +23,8 @@ env:
 # TRIGGERS
 on:
   page_build:
-  # schedule: # Check your schedule here => https://crontab.guru/
-  #   - cron: '55 23 * * 0' # e.g. every Sunday at 23:55
+  schedule: # Check your schedule here => https://crontab.guru/
+    - cron: '55 23 * * 0' # e.g. every Sunday at 23:55
   #
   # THAT'S IT; YOU'RE DONE;
   workflow_dispatch:
