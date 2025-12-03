@@ -2,96 +2,162 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Gabriel Lucchesi
+    - name: Email
+      value: glucc002@fiu.edu
+    - name: Website
+      value: https://ghubnerr.github.io
+    - name: GitHub
+      value: https://github.com/ghubnerr
+    - name: LinkedIn
+      value: https://www.linkedin.com/in/gabriel-lucchesi
+    - name: Location
+      value: Miami, FL
+    - name: Education
+      value: B.Sc. in Computer Science, Florida International University (Honors College)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Florida International University, Honors College
+      institution: Bachelor of Science in Computer Science
+      year: Aug. 2022 - Dec. 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Honors College; Advanced Research and Creativity in Honors.
+        - Coursework in deep learning, reinforcement learning, linear algebra, and probability.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Software Engineering Intern
+      institution: Google – YouTube, Mountain View, CA
+      year: May 2025 – Aug. 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Researched LLM post‑training methods for comment and channel‑wide spam detection at scale.
+        - Designed reinforcement learning–based reward models using Group‑Relative Policy Optimization (GRPO) for adversarial scenarios.
+        - Built JAX tools to fine‑tune Gemma models with LoRA and Reasoning SFT for classification tasks under low‑memory TPU constraints.
+    - title: Software Engineering Intern
+      institution: NVIDIA, Santa Clara, CA
+      year: May 2024 – Aug. 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Developed user‑facing modules in OSMO, a cloud‑based ML infrastructure platform for robotics and GPU scheduling.
+        - Implemented workflow‑scheduling APIs in Python for a Bazel and Kubernetes backend.
+        - Analyzed video‑game agent data for inverse dynamics models for GEAR’s research.
+    - title: Director (Volunteering)
+      institution: INIT FIU, Miami, FL
+      year: Mar. 2023 – Present
       description:
+        - Built the ShellHacks 2024 website for Florida’s largest hackathon with over 1,400 student hackers.
+        - Created a judging system in Streamlit for sponsors, automating scoring on submissions.
+        - Reduced judging latency via optimized database operations and visualization of project submissions.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Research
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Undergraduate Researcher (Contract)
+      institution: Defense Advanced Research Projects Agency, Miami, FL
+      year: Sep. 2024 – Apr. 2025
+      description:
+        - Integrated early fusion–based models into robots for reinforcement learning policies in language‑guided embodied scenarios.
+        - Studied sim‑to‑sim transfer learning for embodied AI models from Habitat‑Sim into Isaac Sim.
+        - Aligned multimodal LLM hidden states with representations of previous high‑level policy actions in PDDL.
+    - title: Undergraduate Researcher (Advanced Research and Creativity in Honors)
+      institution: Florida International University, Miami, FL
+      year: Aug. 2023 – Apr. 2024
+      description:
+        - Applied attribution algorithms for explainable AI in agent‑based deep RL systems under Sumit Kumar Jha, Ph.D.
+        - Trained a lunar lander agent in a Box2D environment using Deep Deterministic Policy Gradients.
+        - Used PyTorch Captum and integrated gradients to visualize agent attributions via a Hugging Face Space.
+
+- title: Selected Publications
+  type: list
+  contents:
+    - "[1] From Signals to Semantics: A Survey on Time Series Explainability through a Human‑Cognitive Lens (with Zhuomin Chen, Gabriel Lucchesi, and others), under review at the Journal of the ACM (JACM), 2025."
+
+- title: Selected Oral Presentations
+  type: time_table
+  contents:
+    - title: National Conference for Undergraduate Research
+      institution: Opening the Black Box – Explainability and Introspection in Deep Reinforcement Learning
+      year: Apr. 2024
+      description:
+        - Oral presentation on explainability techniques for deep RL agents.
+
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Teaching Assistant, COP 3337 (Programming II), MAC 2311 (Calculus I)
+      institution: Florida International University
+      year: Spring 2023 – Spring 2024
+      description:
+        - Assisted over 120 students in total through lectures, office hours, and grading.
+    - title: AI Guild at FIU – Coordinator and Lead Instructor
+      institution: Florida International University
+      year: Aug. 2023 – Present
+      description:
+        - Hosted workshops on deep learning, CUDA, linear algebra, JAX, and PyTorch for a community of 35+ students.
+        - Led reading and implementation of research papers as semi‑weekly projects.
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: Attention Mechanisms | JAX, Flax, WandB
+      institution:
+      year: Mar. 2025
+      description:
+        - Co‑wrote and implemented a survey on state‑of‑the‑art attention mechanisms in JAX and Flax Linen.
+        - Engineered neural attention modules for transformer models across multiple architectures.
+        - Implemented KV‑caching optimizations for incremental attention at inference.
+    - title: Aura | PyTorch, CLIP, Rust, Generative Adversarial Networks, CNNs
+      institution:
+      year: Sep. 2024 – Present
+      description:
+        - Led 3 students in training a lightweight StyleGAN model for conditional video generation.
+        - Built a face detection and emotion recognition pipeline in PyTorch with sub‑second inference.
+        - Used CLIP‑aligned embeddings and WebRTC for real‑time avatar rendering.
+    - title: Memora | Python, LangChain, IrisDB, Llama 3.1b, Flash
+      institution:
+      year: Sep. 2024
+      description:
+        - Co‑developed a memory management system in IrisDB for Alzheimer’s patients using RAG.
+        - Used OpenCV and image‑to‑text processing with Qwen2‑VL to recognize people and items.
+        - Orchestrated a Llama 3.1‑based personal assistant via LangChain and won Best Use of Generative AI at HackN’IT.
+    - title: Mimir | Go, Python, RAPIDS cuML, WeaviateDB
+      institution:
+      year: Sep. 2024
+      description:
+        - Built a conversational interface over accelerator‑based RAG and WeaviateDB for chat history rendering in Next.js.
+        - Won 1st place for ServiceNow’s challenge at University of Central Florida’s KnightHacks hackathon.
+    - title: Project DARWIN | PyTorch, MuJoCo, Gymnasium
+      institution:
+      year: Sep. 2023 – Dec. 2023
+      description:
+        - Led a 6‑person team to create a project aimed at exploring OpenAI Gym, MuJoCo, and deep RL methods.
+        - Trained Q‑learning, Deep Q‑Learning, and DDPG agents across Atari environments.
+    - title: Pots n’ Pans | Computer Vision, RoboFlow, Python, Next.js
+      institution:
+      year: Oct. 2023
+      description:
+        - Built a Next.js app that uses computer vision to infer ingredients from fridge photos.
+        - Deployed a YOLOv8 CNN under a serverless GPU architecture in RunPod and indexed 300k+ recipes.
+        - Won 1st place for sustainability at Georgia Tech’s Hack GT hackathon.
+
+- title: Technical Skills
+  type: list
+  contents:
+    - "Programming Languages: Python, Java, Rust, Golang, C++, C, SQL, Swift, JavaScript, TypeScript."
+    - "ML: JAX, PyTorch, TensorFlow, Gymnasium, MuJoCo, Scikit‑Learn, Keras, CUDA, DSPy, LangChain, Pydantic."
+    - "Developer Tools: Bazel, Jenkins, Docker, Kubernetes, Hugging Face, Git, GCP & Vertex AI, AWS, Azure."
+    - "Data Science: Pandas, NumPy, Matplotlib, SciPy, Seaborn, Jupyter Notebooks."
+    - "Languages: English (Fluent), Brazilian Portuguese (Native), Spanish (Proficient), French (Proficient)."
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: Fall 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Outstanding Engineering Graduate Award – awarded to one student per graduating class recognizing academic excellence.
+    - year: Fall 2022 – Fall 2025
       items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Presidential Merit Scholarship Award – full cost of attendance scholarship.
+        - Dean’s List: Summa Cum Laude – for a GPA of 3.9 or higher across multiple semesters.
