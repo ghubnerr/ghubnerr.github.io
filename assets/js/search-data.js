@@ -30,8 +30,17 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+        },{id: "news-i-ve-started-my-internship-at-nvidia-s-robotics-platform-team",
+          title: 'I’ve started my internship at NVIDIA’s Robotics Platform Team!',
+          description: "",
+          section: "News",},{id: "news-i-m-honored-to-be-featured-on-fiu-s-honors-college-news",
+          title: 'I’m honored to be featured on FIU’s Honors College News.',
+          description: "",
+          section: "News",},{id: "news-i-ve-joined-google-as-an-intern-at-youtube-s-trust-amp-amp-safety-team",
+          title: 'I’ve joined Google as an intern at YouTube’s Trust &amp;amp;amp; Safety team!',
+          description: "",
+          section: "News",},{id: "news-i-m-honored-to-receive-the-fiu-2025-outstanding-graduates-award",
+          title: 'I’m honored to receive the FIU 2025 Outstanding Graduates award.',
           description: "",
           section: "News",},{
         id: 'social-email',
