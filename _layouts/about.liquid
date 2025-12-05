@@ -38,27 +38,19 @@ layout: default
       </div>
     {% endif %}
 
-    {%- assign content_parts = content | split: '<!-- News space -->' -%}
-
-    <!-- Supporting text above news -->
-    <div class="clearfix">
-      {{ content_parts[0] }}
-    </div>
+    {{ content | split: '<!-- News space -->' | first }}
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Content below news (education, experience, etc.) -->
-    {% if content_parts.size > 1 %}
-      <div class="clearfix">
-        {{ content_parts[1] }}
+      <div style="display: flow-root;">
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
       </div>
     {% endif %}
+
+    <div class="clearfix">{{ content | split: '<!-- News space -->' | last }}</div>
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
