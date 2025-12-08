@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I'm honored to receive the FIU 2025 Outstanding Graduates award.
+I'm honored to receive the FIU 2025 Outstanding Graduates award!

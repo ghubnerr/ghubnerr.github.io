@@ -8,7 +8,11 @@ profile:
   align: right
   image: /profile.jpeg
   image_circular: true # crops the image to make it circular
-  more_info: 
+  more_info: <div class="text-center">
+    <p>glucc002 [at] fiu [dot] edu</p><br>
+    <p>Currently in 📍 Miami, FL!</p><br>
+    
+    </div>
 
 announcements:
   enabled: true # includes a list of news items
@@ -23,11 +27,49 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! This website's under construction - please come back within the next 24 hours!
+Hi there! This is Gabriel. I'm a fourth-year CS student at Florida International University. My interests span multimodality, reinforcement learning, and language model reasoning. 
+Previously, I've interned at Google and Nvidia, working across LLM post-training and robotics infrastructure. I've also worked with [Prof. Sumit Jha](https://sumitkumarjha.com) to study vision-language-action (VLA) models for embodied tasks.
+
+I'm originally from Brasília, Brazil; and I love to learn new languages (currently speak: 🇧🇷🇺🇸🇫🇷🇪🇸, learning: 🇨🇳🇩🇪)! On the side, I also teach [lectures in ML](/teaching) for students at FIU.
 
 <!-- News space -->
 
+
+### experience
+
+<div class="row">
+  <div class="col-md-3 d-flex align-items-center justify-content-center">
+    <img src="/assets/img/google.png" alt="Google Logo" class="img-fluid" style="max-width: 150px;">
+  </div>
+  <div class="col-md-9" style="padding-left: 40px;">
+    <ul style="list-style: none; padding-left: 0;">
+      <li><strong>Software Engineering / Machine Learning Intern</strong><br>
+      Google LLC, Mountain View, CA<br>
+      May 2025 – Aug. 2025</li>
+      <li>NLP for YouTube Trust & Safety. Post-training LLMs to neutralize abuse at scale.</li>
+    </ul>
+  </div>
+</div>
+
 <br/>
+
+<div class="row">
+  <div class="col-md-3 d-flex align-items-center justify-content-center">
+    <img src="/assets/img/nvidia.png" alt="NVIDIA Logo" class="img-fluid" style="max-width: 120px; margin-left: 10px;">
+  </div>
+  <div class="col-md-9" style="padding-left: 40px;">
+    <ul style="list-style: none; padding-left: 0;">
+      <li><strong>Software Engineering Intern</strong><br>
+      NVIDIA Corporation, Santa Clara, CA<br>
+      May 2024 – Aug. 2024</li>
+      <li>Cloud Infrastructure for orchestrating Machine Learning and Robotics workflows.</li>
+    </ul>
+  </div>
+</div>
+
+<br/>
+<br/>
+
 ### education
 
 <div class="row">
@@ -46,7 +88,3 @@ Hello! This website's under construction - please come back within the next 24 h
 </div>
 
 <br/>
-
-### experience
-
-🚧 under construction! 🚧 
