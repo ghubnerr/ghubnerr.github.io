@@ -46,25 +46,11 @@ ninja.data = [{
           title: 'I’m honored to receive the FIU 2025 Outstanding Graduates award!',
           description: "",
           section: "News",},{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%67%61%62%72%69%65%6C%68%75%62%6E%65%72%6C%75%63%63%68%65%73%69@%67%6D%61%69%6C.%63%6F%6D", "_blank");
-        },
-      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/ghubnerr", "_blank");
-        },
-      },{
-        id: 'social-instagram',
-        title: 'Instagram',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://instagram.com/gabehubner", "_blank");
         },
       },{
         id: 'social-linkedin',
