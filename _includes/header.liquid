@@ -3,23 +3,29 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
+        <div class="navbar-brand d-flex align-items-center" style="gap: 1rem;">
+          <a class="title font-weight-lighter" href="{{ site.baseurl }}/" style="text-decoration: none; color: inherit;">
+            {% if site.title == 'blank' %}
+              {% if site.first_name %}
+                <span class="font-weight-bold">
+                  {{- site.first_name -}}
+                </span>
+              {% endif %}
+              {% if site.middle_name %}
+                {{- site.middle_name -}}
+              {% endif %}
+              {% if site.last_name %}
+                {{- site.last_name -}}
+              {% endif %}
+            {% else %}
+              {{- site.title -}}
             {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
+          </a>
+          <!-- Social Icons -->
+          <div class="social">
+            {% include social.liquid %}
+          </div>
+        </div>
       {% elsif site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
@@ -101,15 +107,31 @@
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
                   {%- if p.layout == 'cv' and p.cv_pdf -%}
-                    {%- assign url = p.cv_pdf -%}
+                    {%- if p.cv_pdf contains '://' -%}
+                      {%- assign url = p.cv_pdf -%}
+                    {%- else -%}
+                      {%- assign cv_path = p.cv_pdf -%}
+                      {%- if cv_path contains './' -%}
+                        {%- assign cv_path = cv_path | replace: './', '' -%}
+                      {%- endif -%}
+                      {%- if cv_path contains 'assets/pdf/' -%}
+                        {%- assign url = cv_path | relative_url -%}
+                      {%- else -%}
+                        {%- assign url = cv_path | prepend: 'assets/pdf/' | relative_url -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                    {%- assign is_cv_pdf = true -%}
                   {%- elsif p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
+                    {%- assign is_cv_pdf = false -%}
                   {%- elsif p.permalink contains '/blog/' -%}
                     {%- assign url = '/blog/' -%}
+                    {%- assign is_cv_pdf = false -%}
                   {%- else -%}
                     {%- assign url = p.url -%}
+                    {%- assign is_cv_pdf = false -%}
                   {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
+                  <a class="nav-link" href="{{ url }}" {% if is_cv_pdf %}target="_blank" rel="noopener noreferrer"{% endif %}>
                     {{- p.title }}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>

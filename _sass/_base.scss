@@ -341,6 +341,53 @@ ul.task-list input[type="checkbox"] {
       }
     }
   }
+
+  .navbar-brand .social {
+    padding-bottom: 0;
+    padding-top: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      margin: 0;
+
+      img {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-bottom: 0;
+      }
+
+      svg {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-bottom: 0;
+
+        image {
+          width: 1.3rem;
+          height: 1.3rem;
+        }
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
 }
 
 .navbar-toggler {
