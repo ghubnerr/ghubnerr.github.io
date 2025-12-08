@@ -120,23 +120,37 @@
                         {%- assign url = cv_path | prepend: 'assets/pdf/' | relative_url -%}
                       {%- endif -%}
                     {%- endif -%}
-                    {%- assign is_cv_pdf = true -%}
+                    <a class="nav-link" href="{{ url }}" target="_blank" rel="noopener noreferrer">
+                      {{- p.title }}
+                      {% if page.url contains p.url %}
+                        <span class="sr-only">(current)</span>
+                      {% endif %}
+                    </a>
                   {%- elsif p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
-                    {%- assign is_cv_pdf = false -%}
+                    <a class="nav-link" href="{{ url }}">
+                      {{- p.title }}
+                      {% if page.url contains p.url %}
+                        <span class="sr-only">(current)</span>
+                      {% endif %}
+                    </a>
                   {%- elsif p.permalink contains '/blog/' -%}
                     {%- assign url = '/blog/' -%}
-                    {%- assign is_cv_pdf = false -%}
+                    <a class="nav-link" href="{{ url }}">
+                      {{- p.title }}
+                      {% if page.url contains p.url %}
+                        <span class="sr-only">(current)</span>
+                      {% endif %}
+                    </a>
                   {%- else -%}
                     {%- assign url = p.url -%}
-                    {%- assign is_cv_pdf = false -%}
+                    <a class="nav-link" href="{{ url }}">
+                      {{- p.title }}
+                      {% if page.url contains p.url %}
+                        <span class="sr-only">(current)</span>
+                      {% endif %}
+                    </a>
                   {%- endif %}
-                  <a class="nav-link" href="{{ url }}" {% if is_cv_pdf %}target="_blank" rel="noopener noreferrer"{% endif %}>
-                    {{- p.title }}
-                    {% if page.url contains p.url %}
-                      <span class="sr-only">(current)</span>
-                    {% endif %}
-                  </a>
                 </li>
               {% endif %}
             {% endif %}
