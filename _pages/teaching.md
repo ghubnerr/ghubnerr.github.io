@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: https://ai-guild.notion.site/all-projects
 title: teaching
 description: 🚧 under construction! 🚧
 
