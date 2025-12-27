@@ -52,12 +52,6 @@ _styles: |
   }
 ---
 
-### Courses
-
-- COP 3337 - _Programming II, Teaching Assistant, Spring 2024_
-- MAC 2310 - _Calculus I, Learning Assistant, Fall 2023_ [x2]
-- MAC 1147 - _Pre-Calculus Algebra and Trigonometry, Learning Assistant, Spring 2023_
-
 ### [The AI Guild @ FIU](https://ai-guild.notion.site/all-projects)
 
 Since 2023, I've been teaching semi-weekly workshops on machine learning for students at FIU. We like to re-implement and learn from key research papers while building strong fundamentals in the field. A few of my favorite lectures have been on [multimodality](https://docs.google.com/presentation/d/1ipLbIHscrMT6qESFLlAH37ktCnxdRwOv7cNONQT50L4/preview?slide=id.p), [Variational Auto-Encoders](https://colab.research.google.com/drive/143vCFAJun_-rlJ08ysNbmMp2Wn1mw-jy?usp=sharing), and [Reinforcement Learning](https://colab.research.google.com/drive/1QJruRdXCN7dpyw1bqZQBJxwME_JA1ZzQ?usp=sharing).
@@ -214,3 +208,11 @@ _tip: click on the tiles to peek into some lectures!_
     <div class="guild-cell"></div>
   </div>
 </div>
+
+---
+
+### Courses
+
+- COP 3337 - _Programming II, Teaching Assistant, Spring 2024_
+- MAC 2310 - _Calculus I, Learning Assistant, Fall 2023_ [x2]
+- MAC 1147 - _Pre-Calculus Algebra and Trigonometry, Learning Assistant, Spring 2023_
