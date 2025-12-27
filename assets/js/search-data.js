@@ -38,8 +38,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-m-honored-to-receive-the-fiu-2025-outstanding-graduates-award",
           title: 'I’m honored to receive the FIU 2025 Outstanding Graduates award!',
           description: "",
-          section: "News",},{id: "news-i-graduated-from-florida-international-university-with-highest-honors",
-          title: 'I graduated from Florida International University with highest honors.',
+          section: "News",},{id: "news-i-ve-graduated-from-fiu-with-summa-cum-laude-honor",
+          title: 'I’ve graduated from FIU with Summa Cum Laude honor! :)',
           description: "",
           section: "News",},{
         id: 'social-github',
