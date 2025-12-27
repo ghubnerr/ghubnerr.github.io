@@ -60,7 +60,9 @@ _styles: |
 
 ### [The AI Guild @ FIU](https://ai-guild.notion.site/all-projects)
 
-Since 2023, I've been teaching semi-weekly workshops on machine learning for students at FIU. We like to re-implement and learn from important research papers while building strong fundamentals in the field. Some of my favorite lectures have been on [multimodality](https://docs.google.com/presentation/d/1ipLbIHscrMT6qESFLlAH37ktCnxdRwOv7cNONQT50L4/preview?slide=id.p), [VAEs](https://colab.research.google.com/drive/143vCFAJun_-rlJ08ysNbmMp2Wn1mw-jy?usp=sharing), and [RL](https://colab.research.google.com/drive/1QJruRdXCN7dpyw1bqZQBJxwME_JA1ZzQ?usp=sharing). _tip: click on the tiles to peek into some of them!_
+Since 2023, I've been teaching semi-weekly workshops on machine learning for students at FIU. We like to re-implement and learn from key research papers while building strong fundamentals in the field. A few of my favorite lectures have been on [multimodality](https://docs.google.com/presentation/d/1ipLbIHscrMT6qESFLlAH37ktCnxdRwOv7cNONQT50L4/preview?slide=id.p), [Variational Auto-Encoders](https://colab.research.google.com/drive/143vCFAJun_-rlJ08ysNbmMp2Wn1mw-jy?usp=sharing), and [Reinforcement Learning](https://colab.research.google.com/drive/1QJruRdXCN7dpyw1bqZQBJxwME_JA1ZzQ?usp=sharing).
+
+_tip: click on the tiles to peek into some lectures!_
 
 <div class="guild-grid-container">
   <img src="/assets/img/ai-guild.png" alt="AI Guild @ FIU Spring 2025 Workshop Series">
