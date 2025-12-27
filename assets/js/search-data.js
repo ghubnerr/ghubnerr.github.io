@@ -11,10 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-teaching",
           title: "teaching",
-          description: "🚧 under construction! 🚧",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/https:/ai-guild.notion.site/all-projects";
+            window.location.href = "/teaching/";
           },
         },{id: "nav-cv",
           title: "cv",
@@ -37,6 +37,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-m-honored-to-receive-the-fiu-2025-outstanding-graduates-award",
           title: 'I’m honored to receive the FIU 2025 Outstanding Graduates award!',
+          description: "",
+          section: "News",},{id: "news-i-graduated-from-florida-international-university-with-highest-honors",
+          title: 'I graduated from Florida International University with highest honors.',
           description: "",
           section: "News",},{
         id: 'social-github',
