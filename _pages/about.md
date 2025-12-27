@@ -34,57 +34,43 @@ I'm originally from Brasília, Brazil; and I love to learn new languages (curren
 
 <!-- News space -->
 
-### experience
+## experience
 
-<div class="row">
-  <div class="col-md-3 d-flex align-items-center justify-content-center">
-    <img src="/assets/img/google.png" alt="Google Logo" class="img-fluid" style="max-width: 150px;">
+<div class="home-timeline">
+  <div class="row align-items-center g-3 home-entry">
+    <div class="col-12 col-sm-3 col-md-2 d-flex justify-content-center home-entry-logo">
+      <img src="/assets/img/google.png" alt="Google Logo" class="img-fluid home-logo home-logo--wide">
+    </div>
+    <div class="col-12 col-sm-9 col-md-10 home-entry-content">
+      <div class="home-entry-role"><strong>Software Engineering / Machine Learning Intern</strong></div>
+      <div class="home-entry-meta">Google LLC, Mountain View, CA · May 2025 – Aug. 2025</div>
+      <div class="home-entry-desc">NLP for YouTube Trust & Safety. Post-training LLMs to neutralize abuse at scale.</div>
+    </div>
   </div>
-  <div class="col-md-9" style="padding-left: 40px;">
-    <ul style="list-style: none; padding-left: 0;">
-      <li><strong>Software Engineering / Machine Learning Intern</strong><br>
-      Google LLC, Mountain View, CA<br>
-      May 2025 – Aug. 2025</li>
-      <li>NLP for YouTube Trust & Safety. Post-training LLMs to neutralize abuse at scale.</li>
-    </ul>
-  </div>
-</div>
 
-<br/>
-
-<div class="row">
-  <div class="col-md-3 d-flex align-items-center justify-content-center">
-    <img src="/assets/img/nvidia.png" alt="NVIDIA Logo" class="img-fluid" style="max-width: 120px; margin-left: 10px;">
-  </div>
-  <div class="col-md-9" style="padding-left: 40px;">
-    <ul style="list-style: none; padding-left: 0;">
-      <li><strong>Software Engineering Intern</strong><br>
-      NVIDIA Corporation, Santa Clara, CA<br>
-      May 2024 – Aug. 2024</li>
-      <li>Cloud Infrastructure for orchestrating Machine Learning and Robotics workflows.</li>
-    </ul>
+  <div class="row align-items-center g-3 home-entry">
+    <div class="col-12 col-sm-3 col-md-2 d-flex justify-content-center home-entry-logo">
+      <img src="/assets/img/nvidia.png" alt="NVIDIA Logo" class="img-fluid home-logo home-logo--wide">
+    </div>
+    <div class="col-12 col-sm-9 col-md-10 home-entry-content">
+      <div class="home-entry-role"><strong>Software Engineering Intern</strong></div>
+      <div class="home-entry-meta">NVIDIA Corporation, Santa Clara, CA · May 2024 – Aug. 2024</div>
+      <div class="home-entry-desc">Cloud infrastructure for orchestrating Machine Learning and Robotics workflows.</div>
+    </div>
   </div>
 </div>
 
-<br/>
-<br/>
+## education
 
-### education
-
-<div class="row">
-  <div class="col-md-3 d-flex align-items-center justify-content-start">
-    <img src="/assets/img/fiu.png" alt="FIU Logo" class="img-fluid" style="max-width: 150px; margin-right: 20px; margin-bottom: 10px;">
-  </div>
-  <div class="col-md-9" style="padding-left: 40px;">
-    <ul style="list-style: none; padding-left: 0;">
-      <li><strong>Florida International University</strong>, Miami, FL<br>
-      Bachelor of Sciences in Computer Science<br>
-      Aug. 2022 – Dec. 2025
-      <br>CGPA: 4.00/4.00</li>
-
-    </ul>
-
+<div class="home-timeline">
+  <div class="row align-items-center g-3 home-entry">
+    <div class="col-sm-3 col-md-2 d-none d-sm-flex justify-content-center home-entry-logo">
+      <img src="/assets/img/fiu.png" alt="FIU Logo" class="img-fluid home-logo home-logo--square">
+    </div>
+    <div class="col-12 col-sm-9 col-md-10 home-entry-content">
+      <div class="home-entry-role"><strong>Florida International University</strong>, Miami, FL</div>
+      <div class="home-entry-meta">B.S. in Computer Science · Aug. 2022 – Dec. 2025</div>
+      <div class="home-entry-desc">CGPA: 4.00/4.00</div>
+    </div>
   </div>
 </div>
-
-<br/>

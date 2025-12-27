@@ -203,6 +203,8 @@ ul.task-list input[type="checkbox"] {
     p {
       display: inline-block;
       margin: 0;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
   }
 }
@@ -224,6 +226,78 @@ ul.task-list input[type="checkbox"] {
         display: block;
       }
     }
+  }
+}
+
+// About page (homepage) experience/education blocks
+.home-timeline {
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.home-entry {
+  padding: 0.25rem 0;
+
+  & + .home-entry {
+    border-top: 1px solid var(--global-divider-color);
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+  }
+}
+
+.home-entry-meta {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.home-entry-desc {
+  margin-top: 0.35rem;
+}
+
+.home-entry-logo {
+  align-items: center;
+}
+
+.home-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.home-logo--wide {
+  max-width: 140px;
+  max-height: 44px;
+}
+
+.home-logo--square {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+@media (max-width: 575.98px) {
+  // Prevent float + profile block from causing horizontal overflow on mobile.
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .profile .more-info p {
+    display: block;
+    text-align: center;
+  }
+
+  .home-logo--wide {
+    max-width: 110px;
+    max-height: 36px;
+  }
+
+  #back-to-top {
+    right: 16px !important;
+    bottom: 16px !important;
   }
 }
 
