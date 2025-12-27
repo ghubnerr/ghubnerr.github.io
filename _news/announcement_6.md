@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I graduated from Florida International University with highest honors.
+I've graduated from FIU with Summa Cum Laude honor! :)
