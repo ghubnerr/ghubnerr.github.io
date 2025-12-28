@@ -34,11 +34,11 @@ I'm originally from Brasília, Brazil; and I love to learn new languages (curren
 
 <!-- News space -->
 
-### experience
+## experience
 
-<div class="row">
+<div class="row section-row">
   <div class="col-md-3 d-flex align-items-center justify-content-center">
-    <img src="/assets/img/google.png" alt="Google Logo" class="img-fluid" style="max-width: 150px;">
+    <img src="/assets/img/google.png" alt="Google Logo" class="img-fluid experience-logo">
   </div>
   <div class="col-md-9" style="padding-left: 40px;">
     <ul style="list-style: none; padding-left: 0;">
@@ -50,11 +50,9 @@ I'm originally from Brasília, Brazil; and I love to learn new languages (curren
   </div>
 </div>
 
-<br/>
-
-<div class="row">
+<div class="row section-row">
   <div class="col-md-3 d-flex align-items-center justify-content-center">
-    <img src="/assets/img/nvidia.png" alt="NVIDIA Logo" class="img-fluid" style="max-width: 120px; margin-left: 10px;">
+    <img src="/assets/img/nvidia.png" alt="NVIDIA Logo" class="img-fluid experience-logo-nvidia">
   </div>
   <div class="col-md-9" style="padding-left: 40px;">
     <ul style="list-style: none; padding-left: 0;">
@@ -66,14 +64,11 @@ I'm originally from Brasília, Brazil; and I love to learn new languages (curren
   </div>
 </div>
 
-<br/>
-<br/>
-
 ### education
 
-<div class="row">
-  <div class="col-md-3 d-flex align-items-center justify-content-start">
-    <img src="/assets/img/fiu.png" alt="FIU Logo" class="img-fluid" style="max-width: 150px; margin-right: 20px; margin-bottom: 10px;">
+<div class="row section-row">
+  <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
+    <img src="/assets/img/fiu.png" alt="FIU Logo" class="img-fluid education-logo">
   </div>
   <div class="col-md-9" style="padding-left: 40px;">
     <ul style="list-style: none; padding-left: 0;">

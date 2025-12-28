@@ -51,3 +51,63 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+.experience-logo {
+  max-width: 150px;
+}
+
+.experience-logo-nvidia {
+  max-width: 120px;
+  margin-left: 10px;
+}
+
+.education-logo {
+  max-width: 150px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+// Section spacing
+.post article h2,
+.post article h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-row {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .experience-logo {
+    max-height: 50px;
+    margin-bottom: 15px;
+    width: auto !important;
+  }
+
+  .experience-logo-nvidia {
+    max-height: 75px;
+    margin-bottom: 15px;
+    margin-left: 0 !important;
+    width: auto !important;
+  }
+
+  .education-logo {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+    max-height: 120px;
+    width: auto !important;
+  }
+
+  .post article .profile {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    margin-bottom: 1.5rem;
+
+    .more-info {
+      width: 100%;
+    }
+  }
+}
