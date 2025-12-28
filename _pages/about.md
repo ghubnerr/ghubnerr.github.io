@@ -64,7 +64,7 @@ I'm originally from Brasília, Brazil; and I love to learn new languages (curren
   </div>
 </div>
 
-### education
+## education
 
 <div class="row section-row">
   <div class="col-md-3 d-flex align-items-center justify-content-center justify-content-md-start">
