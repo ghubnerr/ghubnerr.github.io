@@ -10,7 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: <div class="text-center">
     <p>glucc002 [at] fiu [dot] edu</p><br>
-    <p>Currently in 📍 Miami, FL!</p><br>
+    <p>Currently in 📍 Bay Area, CA!</p><br>
 
     </div>
 
@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! This is Gabriel. I'm a fourth-year CS student at Florida International University. My interests span multimodality, reinforcement learning, explainability, and language model reasoning.
+Hi there! This is Gabriel. I'm a recent CS graduate from Florida International University. My interests span multimodality, reinforcement learning, explainability, and language model reasoning.
 Previously, I've interned at Google and Nvidia, working across LLM post-training and infrastructure for robotics. I've also worked with [Prof. Sumit Jha](https://sumitkumarjha.com) to study vision-language-action (VLA) models for embodied tasks.
 
 I'm originally from Brasília, Brazil; and I love to learn new languages (currently speak: 🇧🇷🇺🇸🇫🇷🇪🇸, learning: 🇨🇳🇩🇪)! On the side, I also teach [lectures in ML](/teaching) for students at FIU.
