@@ -10,7 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: <div class="text-center">
     <p>glucc002 [at] fiu [dot] edu</p><br>
-    <p>Currently in 📍 Bay Area, CA!</p><br>
+    <p>📍 Bay Area, CA</p><br>
 
     </div>
 
