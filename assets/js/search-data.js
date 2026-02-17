@@ -48,6 +48,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-ve-graduated-from-fiu-with-summa-cum-laude-honor",
           title: 'I’ve graduated from FIU with Summa Cum Laude honor! :)',
           description: "",
+          section: "News",},{id: "news-i-ve-returned-to-google-as-a-machine-learning-engineer-on-youtube-s-trust-amp-amp-safety-team-to-make-youtube-a-better-place-for-everyone",
+          title: 'I’ve returned to Google as a Machine Learning Engineer on YouTube’s Trust &amp;amp;amp;...',
+          description: "",
           section: "News",},{
         id: 'social-github',
         title: 'GitHub',
