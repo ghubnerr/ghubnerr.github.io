@@ -3,7 +3,7 @@
     "name": "Gabriel Lucchesi",
     "label": "Software Engineering & ML Intern",
     "image": "",
-    "email": "glucc002@fiu.edu",
+    "email": "ghubner@google.com",
     "phone": "(305) 561-8048",
     "url": "https://ghubnerr.github.io",
     "summary": "Software engineering and machine learning student at Florida International University, focused on large-scale systems, reinforcement learning, and explainable AI.",
@@ -189,25 +189,66 @@
       "name": "Programming Languages",
       "level": "",
       "icon": "",
-      "keywords": ["Python", "Java", "Rust", "Golang", "C++", "C", "SQL", "Swift", "JavaScript", "TypeScript"]
+      "keywords": [
+        "Python",
+        "Java",
+        "Rust",
+        "Golang",
+        "C++",
+        "C",
+        "SQL",
+        "Swift",
+        "JavaScript",
+        "TypeScript"
+      ]
     },
     {
       "name": "Machine Learning & Libraries",
       "level": "",
       "icon": "",
-      "keywords": ["JAX", "PyTorch", "TensorFlow", "Gymnasium", "MuJoCo", "Scikit-Learn", "Keras", "CUDA", "DSPy", "LangChain", "Pydantic"]
+      "keywords": [
+        "JAX",
+        "PyTorch",
+        "TensorFlow",
+        "Gymnasium",
+        "MuJoCo",
+        "Scikit-Learn",
+        "Keras",
+        "CUDA",
+        "DSPy",
+        "LangChain",
+        "Pydantic"
+      ]
     },
     {
       "name": "Developer Tools & Platforms",
       "level": "",
       "icon": "",
-      "keywords": ["Bazel", "Jenkins", "Docker", "Kubernetes", "Hugging Face", "Git", "Google Cloud Platform", "Vertex AI", "AWS", "Azure"]
+      "keywords": [
+        "Bazel",
+        "Jenkins",
+        "Docker",
+        "Kubernetes",
+        "Hugging Face",
+        "Git",
+        "Google Cloud Platform",
+        "Vertex AI",
+        "AWS",
+        "Azure"
+      ]
     },
     {
       "name": "Data Science & Analytics",
       "level": "",
       "icon": "",
-      "keywords": ["Pandas", "NumPy", "Matplotlib", "SciPy", "Seaborn", "Jupyter Notebooks"]
+      "keywords": [
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "SciPy",
+        "Seaborn",
+        "Jupyter Notebooks"
+      ]
     }
   ],
   "languages": [
@@ -310,7 +351,9 @@
     {
       "name": "National Conference for Undergraduate Research Talk",
       "summary": "Oral presentation on explainability and introspection in deep reinforcement learning.",
-      "highlights": ["Presented work \"Opening the Black Box: Explainability and Introspection in Deep Reinforcement Learning\" at NCUR."],
+      "highlights": [
+        "Presented work \"Opening the Black Box: Explainability and Introspection in Deep Reinforcement Learning\" at NCUR."
+      ],
       "startDate": "2024-04-01",
       "endDate": "2024-04-01",
       "url": ""

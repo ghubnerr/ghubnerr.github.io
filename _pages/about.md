@@ -8,10 +8,10 @@ profile:
   align: right
   image: /profile.jpeg
   image_circular: true # crops the image to make it circular
-  more_info: <div class="text-center">
-    <p>glucc002 [at] fiu [dot] edu</p><br>
+  more_info: >
+    <div class="text-center">
+    <p>ghubner [at] <img style="height: 1.2em; width: auto; display: inline; vertical-align: middle; margin-bottom: 0.1em;" src="/assets/img/google_icon.png" alt="Google"> .com</p><br>
     <p>📍 Bay Area, CA</p><br>
-
     </div>
 
 announcements:
