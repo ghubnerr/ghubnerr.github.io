@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I've returned to **Google** as a Machine Learning Engineer on YouTube's Trust & Safety team to make YouTube a better place for everyone!
+I've returned to **Google** as a Machine Learning Engineer on YouTube!

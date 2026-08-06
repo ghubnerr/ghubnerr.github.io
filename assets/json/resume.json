@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Gabriel Lucchesi",
-    "label": "Software Engineering & ML Intern",
+    "label": "Machine Learning Engineer",
     "image": "",
     "email": "ghubner@google.com",
     "phone": "(305) 561-8048",
@@ -10,9 +10,9 @@
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Miami",
+      "city": "Mountain View",
       "countryCode": "US",
-      "region": "Florida"
+      "region": "California"
     },
     "profiles": [
       {
@@ -33,6 +33,20 @@
     ]
   },
   "work": [
+    {
+      "name": "Google - YouTube",
+      "position": "Machine Learning Engineer",
+      "url": "",
+      "location": "Mountain View, CA",
+      "startDate": "2026-02-01",
+      "endDate": "",
+      "summary": "Large-scale graph modeling and NLP for understanding channel relatedness at YouTube.",
+      "highlights": [
+        "Modeled end-to-end training and online inference pipelines for large-scale JAX-based Siamese Neural Networks for channel relatedness classification on actor relatedness, accounting for hundreds of millions of YouTube users.",
+        "Leading development of Message-Passing Neural Networks (MPNNs) on YouTube user graphs to proactively predict channel badness through topological and neighborhood-based features of colluding actor clusters.",
+        "Reduced manual human reviews for relatedness by content similarity across YouTube by 58% through LLM-as-raters and parameter-efficient encoder-heavy classifiers trained with supervised fine-tuning."
+      ]
+    },
     {
       "name": "Google - YouTube",
       "position": "Software Engineering Intern",

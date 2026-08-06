@@ -42,10 +42,24 @@ I'm originally from Brasília, Brazil; and I love to learn new languages (curren
   </div>
   <div class="col-md-9" style="padding-left: 40px;">
     <ul style="list-style: none; padding-left: 0;">
+      <li><strong>Machine Learning Engineer</strong><br>
+      Google LLC, Mountain View, CA<br>
+      Feb. 2026 – Present</li>
+      <li>Large-scale graph modeling and NLP for understanding channel relatedness at YouTube.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row section-row">
+  <div class="col-md-3 d-flex align-items-center justify-content-center">
+    <img src="/assets/img/google.png" alt="Google Logo" class="img-fluid experience-logo">
+  </div>
+  <div class="col-md-9" style="padding-left: 40px;">
+    <ul style="list-style: none; padding-left: 0;">
       <li><strong>Software Engineering / Machine Learning Intern</strong><br>
       Google LLC, Mountain View, CA<br>
       May 2025 – Aug. 2025</li>
-      <li>NLP for YouTube Trust & Safety. Post-training LLMs to neutralize abuse at scale.</li>
+      <li>NLP for YouTube. Post-training LLMs to neutralize abuse at scale.</li>
     </ul>
   </div>
 </div>

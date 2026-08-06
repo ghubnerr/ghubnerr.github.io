@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I've joined **Google** as an intern at YouTube's Trust & Safety team!
+I've joined **Google** as an intern on YouTube!

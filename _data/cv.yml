@@ -12,7 +12,7 @@
     - name: LinkedIn
       value: https://www.linkedin.com/in/gabriel-lucchesi
     - name: Location
-      value: Miami, FL
+      value: Bay Area, CA
     - name: Education
       value: B.Sc. in Computer Science, Florida International University (Honors College)
 
@@ -29,6 +29,13 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Machine Learning Engineer
+      institution: Google – YouTube, Mountain View, CA
+      year: Feb. 2026 – Present
+      description:
+        - Modeled end-to-end training and online inference pipelines for large-scale JAX-based Siamese Neural Networks for channel relatedness classification on actor relatedness, accounting for hundreds of millions of YouTube users.
+        - Leading development of Message-Passing Neural Networks (MPNNs) on YouTube user graphs to proactively predict channel badness through topological and neighborhood-based features of colluding actor clusters.
+        - Reduced manual human reviews for relatedness by content similarity across YouTube by 58% through LLM-as-raters and parameter-efficient encoder-heavy classifiers trained with supervised fine-tuning.
     - title: Software Engineering Intern
       institution: Google – YouTube, Mountain View, CA
       year: May 2025 – Aug. 2025
